@@ -93,24 +93,31 @@
             /* 기타 스타일은 생략하고 뒤로가기 버튼 스타일만 표시 */
         .back-button {
             /* 다른 스타일 속성들... */
+            position: absolute; /* 절대적 위치 지정 */
+            top: 20px;          /* 상단에서 20px 떨어져서 위치 */
+            left: 20px;         /* 왼쪽에서 20px 떨어져서 위치 */
+            background-color: rgba(255, 255, 255, 0.7); /* 버튼 배경색 */
+            padding: 10px;      /* 내부 여백 */
+            border-radius: 50%; /* 버튼을 원형으로 만들기 */
+            z-index: 1000;      /* 다른 요소 위에 위치하도록 z-index 지정 */
             color: #0000005a; /* 이 부분에서 색상 코드를 원하는 값으로 변경합니다. */
         }
     </style>
 </head>
 
-<body>
-    <!-- 뒤로 가기 버튼. 사용자가 클릭하면 JavaScript 함수를 호출합니다. -->
+<body>    <!-- 뒤로 가기 버튼. 사용자가 클릭하면 JavaScript 함수를 호출합니다. -->
     <!-- 'href' 속성에 메인 페이지의 URL을 지정합니다. -->
     <a href="https://cherr12.github.io/9988/" class="back-button"> <!-- 예: 'index.html' -->
         <i class="fas fa-arrow-left"></i> <!-- 화살표 아이콘 -->
     </a>
     
+
     <div class="container mt-5">
         <h2 class="text-center mb-4">밴드 선택하기</h2>
         <div class="row">
             <!-- 버튼에 링크와 aria-label 추가 -->
             <div class="col-md-6 custom-col">
-                <a href="https://cherr12.github.io/9988_1-1/" class="btn circle-btn btn-beige-1" aria-label="1차 밴드 선택, HL5, 인바디밴드, 인랩워치, PWB-600S">
+                <a href="fhttps://cherr12.github.io/9988_1-1/" class="btn circle-btn btn-beige-1" aria-label="1차 밴드 선택, HL5, 인바디밴드, 인랩워치, PWB-600S">
                     1차 밴드
                     <div class="subtitle">HL5, 인바디밴드, 인랩워치, PWB-600S</div>
                 </a>
@@ -144,7 +151,9 @@
             window.history.back(); // 이전 페이지로 이동합니다.
         }
     </script>
-</body>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7176398630749148"
+     crossorigin="anonymous"></script>
 
 
 </html>
